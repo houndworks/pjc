@@ -1,0 +1,60 @@
+.nav > li > a {
+  padding: 20px;
+  padding-left: 0px;
+  background-color: transparent;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: white;
+}
+
+.nav {
+  border: none;
+}
+
+.nav a:hover {
+  border: none;
+}
+
+.navbar {
+  min-height: 20px;
+  border: none;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: #e7e7e7;
+}
+
+
+.navbar-default .navbar-text {
+  color: #777777;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #777777;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: black;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+
