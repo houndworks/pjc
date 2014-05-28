@@ -60,6 +60,13 @@
   background-color: transparent;
 }
 
+.navbar-collapse {
+  padding-left: 0px;
+}
+
+/* End bootstrap overrides */
+
+/* Headings */
 
 h1 > a,
 h1 > a:hover, 
@@ -69,7 +76,7 @@ h1 > a:active {
   text-decoration: none;
 }
 
-/* End bootstrap overrides */
+/* End headings */
 
 /* Footer */
 .footer {
