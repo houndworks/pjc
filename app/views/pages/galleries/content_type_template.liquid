@@ -1,0 +1,31 @@
+---
+title: Gallery Template #NB: This only gets overridden properly when pushed to Engine!
+listed: true
+published: true
+content_type: galleries
+position: 2
+---
+
+{% extends parent %}
+
+{% block main %}
+
+<div>
+  {{ gallery.description }}
+</div>
+
+<div class="images row">
+  {% for image in gallery.images %}
+    <div class="image col-xs-6 col-sm-4 col-md-3">
+      {% assign title = image.title %}
+      {% assign size = '350x300#' %}
+      {% include 'img_box', image: image.file, title, size  %}
+    </div>
+    {% cycle  '', '<div class="clearfix visible-xs">&nbsp;</div>' %}
+    {% cycle '', '', '<div class="clearfix visible-sm ">&nbsp;</div>' %}
+    {% cycle '', '', '', '<div class="clearfix hidden-sm hidden-xs">&nbsp;</div>' %}
+  {% endfor %}
+</div>
+
+{% endblock %}
+

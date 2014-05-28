@@ -1,0 +1,12 @@
+- Paintings:
+    description: "Interesting artworks produced by an artist with brushes."
+    images: [Normal Beef, Spanish Exoticism, Sausages, Cabbage at Night, My Three Cars, Whiskers, Gravy, Tremulous Dogs, Forty Thousand]
+
+- Drawings:
+    description: "Interesting artworks produced by an artist with pencils."
+    images: [Normal Beef, Ladies, A Bad Smell, Cows in the Pasture, Champagne Breakfast]
+
+- Recent Work:
+    description: "Recent and interesting artworks produced by the artist."
+    images: [Normal Beef, A Bad Smell, Cabbage at Night, Gravy, Forty Thousand]
+

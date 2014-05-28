@@ -1,0 +1,21 @@
+---
+title: Galleries
+listed: false
+published: true
+position: 1
+---
+
+{% extends parent %}
+
+{% block main %}
+  <div class="row posts">
+    {% for gallery in contents.galleries %}
+      <div class="">
+        <a href="/galleries/{{ gallery._slug }}">
+          <h3>{{ gallery.title | escape }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+
