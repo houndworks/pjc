@@ -58,3 +58,11 @@
   background-color: transparent;
 }
 
+
+h1 > a,
+h1 > a:hover, 
+h1 > a:focus,
+h1 > a:active {
+  color: black;
+  text-decoration: none;
+}
