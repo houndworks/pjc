@@ -1,8 +1,8 @@
 /* Bootstrap overrides */
 
 .nav > li > a {
-  padding: 20px;
-  padding-left: 0px;
+  padding: 20px 20px 0px 0px;
+  /* padding-left: 0px; */
   background-color: transparent;
 }
 
@@ -23,6 +23,7 @@
 .navbar {
   min-height: 20px;
   border: none;
+  border-bottom: solid 1px #e7e7e7;
 }
 
 .navbar-default {
@@ -82,6 +83,8 @@ h1 > a:active {
 .footer {
   color: #333333;
   font-size: 9pt;
+  border: none;
+  border-top: 1px solid #e7e7e7;
 }
 /* End foooter */
 
