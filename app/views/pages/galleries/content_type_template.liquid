@@ -7,6 +7,12 @@ content_type: galleries
 
 {% extends parent %}
 
+{% block additional_css %}
+      {{ 'colorbox.css' | stylesheet_tag }}
+{% endblock %}
+
+
+
 {% block main %}
 
 <div>
@@ -18,7 +24,14 @@ content_type: galleries
     <div class="image col-xs-6 col-sm-4 col-md-3">
       {% assign title = image.title %}
       {% assign size = '350x300#' %}
-      {% include 'img_box', image: image.file, title, size  %}
+      {% comment %}
+        {% include 'img_box', image: image.file, title, size  %}
+      {% endcomment %}
+      <div class="img-box">
+        <a class='img_group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
+          <img src="{{ image.file | resize: size }}" alt="{{ title | escape }}" />
+        </a>
+      </div>
     </div>
     {% cycle  '', '<div class="clearfix visible-xs">&nbsp;</div>' %}
     {% cycle '', '', '<div class="clearfix visible-sm ">&nbsp;</div>' %}
@@ -28,3 +41,13 @@ content_type: galleries
 
 {% endblock %}
 
+
+{% block additional_js %}
+    {{ 'jquery.colorbox.js' | javascript_tag }}
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        //Examples of how to assign the Colorbox event to elements
+        $(".img_group").colorbox({rel:'img_group', transition:"none", width:"75%", height:"75%"});
+      });
+    </script>
+{% endblock %}
