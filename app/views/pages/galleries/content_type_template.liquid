@@ -24,9 +24,6 @@ content_type: galleries
     <div class="image col-xs-6 col-sm-4 col-md-3">
       {% assign title = image.title %}
       {% assign size = '350x300#' %}
-      {% comment %}
-        {% include 'img_box', image: image.file, title, size  %}
-      {% endcomment %}
       <div class="img-box">
         <a class='img_group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
           <img src="{{ image.file | resize: size }}" alt="{{ title | escape }}" />
