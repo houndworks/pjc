@@ -25,7 +25,7 @@ content_type: galleries
       {% assign title = image.title %}
       {% assign size = '350x300#' %}
       <div class="img-box">
-        <a class='img_group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
+        <a class='img-group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
           <img src="{{ image.file | resize: size }}" alt="{{ title | escape }}" />
         </a>
       </div>
@@ -44,7 +44,7 @@ content_type: galleries
     <script type='text/javascript'>
       $(document).ready(function(){
         //Examples of how to assign the Colorbox event to elements
-        $(".img_group").colorbox({rel:'img_group', transition:"none", maxWidth: "80%", maxHeight: "80%", width: "90%", height: "90%", });
+        $(".img-group").colorbox({rel:'img-group', transition:"none", maxWidth: "80%", maxHeight: "80%", width: "90%", height: "90%", });
       });
     </script>
 {% endblock %}
