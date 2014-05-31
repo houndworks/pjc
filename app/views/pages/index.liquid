@@ -16,8 +16,8 @@ published: true
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       {{ 'bootstrap.css' | stylesheet_tag }}
-      {{ 'styles.css' | stylesheet_tag }}
       {{ 'fonts.css' | stylesheet_tag }}
+      {{ 'styles.css' | stylesheet_tag }}
       {% block additional_css %}
         <!-- Default additional css -->
       {% endblock %}
@@ -31,7 +31,7 @@ published: true
       <!-- Site Title -->
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-sm-12">
-          <h1><a href="/">{{ site.name | escape }}</a></h1>
+          <h1 class='title'><a href="/">{{ site.name | escape }}</a></h1>
         </div>
       </div>
 

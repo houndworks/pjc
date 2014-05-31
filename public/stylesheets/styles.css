@@ -1,3 +1,12 @@
+body * {
+  font-family: 'cabin';
+}
+
+h1.title {
+  text-transform: uppercase;
+}
+
+
 /* Bootstrap overrides */
 
 .nav > li > a {
