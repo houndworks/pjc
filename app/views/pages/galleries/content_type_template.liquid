@@ -23,7 +23,7 @@ content_type: galleries
   {% for image in gallery.images %}
     <div class="image col-xs-6 col-sm-4 col-md-3">
       {% assign title = image.title %}
-      {% assign size = '350x300#' %}
+      {% assign size = '250x200#' %}
       <div class="img-box">
         <a class='img-group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
           <img src="{{ image.file | resize: size }}" alt="{{ title | escape }}" />

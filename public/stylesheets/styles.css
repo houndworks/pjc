@@ -71,8 +71,16 @@ h1.title {
 }
 
 .navbar-collapse {
-  padding-left: 0px;
+  padding-left: 0px; 
 }
+
+/* Not sure why -15px? I've overridden it, since because of removal of padding above in nav, it shifts nav items off the left side on small res - ...hmm.. */ 
+.navbar-nav {
+  /* margin: 7.5px -15px; */
+  margin: 7.5px 0px; 
+}
+
+
 
 /* End bootstrap overrides */
 
