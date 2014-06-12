@@ -5,15 +5,15 @@
 - Cabbage at Night:
     file: http://placehold.it/450x338.jpeg
     media: Chicken on Gravy
-    date: '2005-08-12'
+    date:
 - My Three Cars:
     file: http://placehold.it/800x450.jpeg
     media: Oil on Canvas
     date: '2011-08-04'
 - Gravy:
     file: http://placehold.it/1280x960.jpeg
-    media: Oil on Canvas
-    date: '1986-03-27'
+    media: 
+    date: 
 - Sausages:
     file: http://placehold.it/1280x960.png
     media: Oil on Canvas
@@ -24,7 +24,7 @@
     date: '2001-08-01'
 - Forty Thousand:
     file: http://placehold.it/724x456.png
-    media: Graphite on Paper
+    media: 
     date: '1904-12-09'
 - Cows in the Pasture:
     file: http://placehold.it/800x450.jpeg

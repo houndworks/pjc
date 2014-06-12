@@ -25,7 +25,7 @@ content_type: galleries
       {% assign title = image.title %}
       {% assign size = '250x200#' %}
       <div class="img-box">
-        <a class='img-group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}">
+        <a class='img-group' href="{{ image.file | resize: '800x>' }}" title="{{ title }}{% if image.media %}, {{ image.media }}{% endif %}{% if image.date %}, {{ image.date | localized_date: '%Y' }} {% endif %}">
           <img src="{{ image.file | resize: size }}" alt="{{ title | escape }}" />
         </a>
       </div>
