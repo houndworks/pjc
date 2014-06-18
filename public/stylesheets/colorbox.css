@@ -21,22 +21,16 @@
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#fff;}
-#colorbox{outline:0;}
-    #cboxTopLeft{width:25px; height:25px; background:url(images/border1.png) no-repeat 0 0;}
-    #cboxTopCenter{height:25px; background:url(images/border1.png) repeat-x 0 -50px;}
-    #cboxTopRight{width:25px; height:25px; background:url(images/border1.png) no-repeat -25px 0;}
-    #cboxBottomLeft{width:25px; height:25px; background:url(images/border1.png) no-repeat 0 -25px;}
-    #cboxBottomCenter{height:25px; background:url(images/border1.png) repeat-x 0 -75px;}
-    #cboxBottomRight{width:25px; height:25px; background:url(images/border1.png) no-repeat -25px -25px;}
-    #cboxMiddleLeft{width:25px; background:url(images/border2.png) repeat-y 0 0;}
-    #cboxMiddleRight{width:25px; background:url(images/border2.png) repeat-y -25px 0;}
+#colorbox{outline:1;outline-style:solid;outline-width:thin;}
     #cboxContent{background:#fff; overflow:hidden;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:20px;}
-        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
-        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
-        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 5px 5px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#333;}
+        /* #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;} */
+        /* Hide the current image number */
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxLoadingOverlay{background:#fff url(/images/loading.gif) no-repeat 5px 5px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
@@ -45,9 +39,17 @@
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
-        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        /*#cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(/images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}
+*/
+        /* Use the text only close link */
+        #cboxClose{position:absolute; bottom:0; right:10px; display:block; color:#555;}
+
+
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
@@ -64,3 +66,4 @@
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
+
