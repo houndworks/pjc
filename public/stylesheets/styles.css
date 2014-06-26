@@ -5,6 +5,7 @@ body * {
 
 h1.title {
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 
