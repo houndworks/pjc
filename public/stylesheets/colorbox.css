@@ -25,7 +25,7 @@
     #cboxContent{background:#fff; overflow:hidden;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxLoadedContent{margin-bottom:50px;} /* DAMC - increased this from 20 to stop large images having title too close */
         #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#333;}
         /* #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;} */
         /* Hide the current image number */
