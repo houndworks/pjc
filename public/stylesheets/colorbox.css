@@ -21,7 +21,7 @@
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#fff;}
-#colorbox{outline:1;outline-style:solid;outline-width:thin;}
+#colorbox{outline:0;}/*outline-style:solid;outline-width:thin;} */
     #cboxContent{background:#fff; overflow:hidden;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
