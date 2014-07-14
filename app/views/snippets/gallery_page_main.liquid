@@ -1,25 +1,9 @@
----
-title: Gallery Template #NB: This only gets overridden properly when pushed to Engine!
-listed: true
-published: true
-content_type: galleries
----
-
-{% extends parent %}
-
-{% block additional_css %}
-      {{ 'colorbox.css' | stylesheet_tag }}
-{% endblock %}
-
-
-
-{% block main %}
-
-
 
 <div>
   {{ gallery.description }}
 </div>
+
+Number: {{ gallery.images.size }}
 
 <div class="images row">
   {% for image in gallery.images %}
@@ -38,16 +22,5 @@ content_type: galleries
   {% endfor %}
 </div>
 
-{% endblock %}
 
 
-{% block additional_js %}
-    {{ 'jquery.colorbox.js' | javascript_tag }}
-    <script type='text/javascript'>
-      $(document).ready(function(){
-        //Examples of how to assign the Colorbox event to elements
-        //$(".img-group").colorbox({rel:'img-group', transition:"none", maxWidth: "80%", maxHeight: "80%", width: "90%", height: "90%", });
-        $(".img-group").colorbox({rel:'img-group', transition:"none", width: "80%", height: "80%", });
-      });
-    </script>
-{% endblock %}
