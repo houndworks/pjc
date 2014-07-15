@@ -53,12 +53,7 @@ redirect_url: "/galleries/recent-work"
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                {% for g in contents.galleries %}
-                  <li {% if page.slug == g._slug %}class="active"{% endif %}>
-                    <a href="/galleries/{{ g._slug }}">{{ g.title | escape }}</a>
-                  </li>
-                {% endfor %}
-                {% nav site, depth: 1, no_wrapper: true, active_class: "active" %}
+                {% nav site, depth: 2, no_wrapper: true, active_class: "active" %}
               </ul>
             </div>
           </nav>
