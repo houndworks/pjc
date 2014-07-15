@@ -1,9 +1,10 @@
-
 <div>
   {{ gallery.description }}
 </div>
 
-Number: {{ gallery.images.size }}
+Snippet:<br />
+Slug: {{ gallery._slug }}<br />
+Size: {{ gallery.images.size }}
 
 <div class="images row">
   {% for image in gallery.images %}
