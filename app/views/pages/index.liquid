@@ -50,10 +50,11 @@ redirect_url: "/galleries/recent-work"
                 <span class="icon-bar"></span>
               </button>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                {% nav site, depth: 2, no_wrapper: true, active_class: "active" %}
+                {% nav site, depth: 1, no_wrapper: true, active_class: "active" %}
               </ul>
             </div>
           </nav>
@@ -68,6 +69,10 @@ redirect_url: "/galleries/recent-work"
           {% comment %}
             <h2>{{ page.title | escape }}</h2>
           {% endcomment %}
+
+          {% block subnav %}
+          {% endblock %}
+
           {% block main %}
             Default content for landing page...
           {% endblock %}
