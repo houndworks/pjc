@@ -57,6 +57,14 @@ redirect_url: "/galleries/recent-work"
                 {% nav site, depth: 1, no_wrapper: true, active_class: "active" %}
               </ul>
             </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <ul class="nav subnav navbar-nav">
+                {% block subnav %}
+                {% endblock %}
+              </ul>
+            </div>
+             
           </nav>
 
         </div>
@@ -70,9 +78,7 @@ redirect_url: "/galleries/recent-work"
             <h2>{{ page.title | escape }}</h2>
           {% endcomment %}
 
-          {% block subnav %}
-          {% endblock %}
-
+          
           {% block main %}
             Default content for landing page...
           {% endblock %}

@@ -23,6 +23,11 @@ published: true
   {% include 'gallery_page_css' %}
 {% endblock %}
 
+{% block subnav %}
+  {% nav 'test', depth: 1, no_wrapper: true, active_class: "active" %}
+{% endblock %}
+
+
 {% block main %}
 
   {% with_scope _slug: 'paintings' %}
