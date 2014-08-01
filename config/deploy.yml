@@ -1,8 +1,8 @@
 development:
-  host: localhost:3000
-#  email: john@doe.net
-#  password: apassword
-  api_key: 287a653c3f2ec0ee356e597efab24a60b30e7619
+  #host: localhost:3000
+  #api_key: 287a653c3f2ec0ee356e597efab24a60b30e7619
+  host: localhost:8080
+  api_key: 99742bfd77d23d0cb1d3434bff7ea3d3ed5e2fc6
 staging:
   host: staging.example.com
   email: john@doe.net

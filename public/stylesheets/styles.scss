@@ -1,6 +1,8 @@
+@import "constants.scss";
+
 body * {
-  font-family: 'cabin';
-  color: #333333;
+  font-family: $main_font;
+  color: $text_colour;
 }
 
 h1.title {
