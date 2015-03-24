@@ -4,6 +4,7 @@
 	(c) 2014 Jack Moore - http://www.jacklmoore.com/colorbox
 	license: http://www.opensource.org/licenses/mit-license.php
 */
+
 (function ($, document, window) {
 	var
 	// Default settings object.

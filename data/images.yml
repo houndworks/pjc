@@ -1,53 +1,382 @@
-- Whiskers:
-    file: http://placehold.it/450x338.png
-    media: Oil on Canvas
-    date: '2013-08-04'
-- Cabbage at Night:
-    file: http://placehold.it/450x338.jpeg
-    media: Chicken on Gravy
-    date:
-- My Three Cars:
-    file: http://placehold.it/800x450.jpeg
-    media: Oil on Canvas
-    date: '2011-08-04'
-- Gravy:
-    file: http://placehold.it/1280x960.jpeg
-    media: 
-    date: 
-- Sausages:
-    file: http://placehold.it/1280x960.png
-    media: Oil on Canvas
-    date: '1998-06-09'
-- Tremulous Dogs:
-    file: http://placehold.it/800x600.jpeg
+---
+- Pigeonhole:
+    _slug: pigeonhole
+    date: 01/01/2007
     media: Graphite on Paper
-    date: '2001-08-01'
-- Forty Thousand:
-    file: http://placehold.it/724x456.png
-    media: 
-    date: '1904-12-09'
-- Cows in the Pasture:
-    file: http://placehold.it/800x450.jpeg
+    file: /samples/images/pigeonhole/PIGEONHOLE-2007.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Egress:
+    _slug: egress
+    date: 01/01/2007
     media: Graphite on Paper
-    date: '1927-07-04'
-- A Bad Smell:
-    file: http://placehold.it/724x456.gif
+    file: /samples/images/egress/EGRESS-2007.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Distich:
+    _slug: distich
+    date: 01/01/2007
     media: Graphite on Paper
-    date: '1955-11-03'
-- Ladies:
-    file: http://placehold.it/1536x1180.jpeg
+    file: /samples/images/distich/DISTICH-2007.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Browz:
+    _slug: browz
+    date: 01/01/2003
     media: Graphite on Paper
-    date: '2013-08-04'
-- Spanish Exoticism:
-    file: http://placehold.it/1536x1180.jpeg
+    file: /samples/images/browz/BROWZ-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Din:
+    _slug: din
+    date: 01/01/2004
     media: Graphite on Paper
-    date: '2013-08-04'
-- Champagne Breakfast:
-    file: http://placehold.it/640x480.jpg
+    file: /samples/images/din/DIN-2004.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Unlit:
+    _slug: unlit
+    date: 01/01/2003
     media: Graphite on Paper
-    date: '2013-08-04'
-- Normal Beef:
-    file: http://placehold.it/450x338.jpg
+    file: /samples/images/unlit/UNLIT-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Issue:
+    _slug: issue
+    date: 01/01/2003
     media: Graphite on Paper
-    date: '2013-08-04'
-
+    file: /samples/images/issue/ISSUE-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Collect:
+    _slug: collect
+    date: 01/01/2003
+    media: Graphite on Paper
+    file: /samples/images/collect/COLLECT-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Outof:
+    _slug: outof
+    date: 01/01/2003
+    media: Graphite on Paper
+    file: /samples/images/outof/OUTOF-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Hookof:
+    _slug: hookof
+    date: 01/01/2003
+    media: Graphite on Paper
+    file: /samples/images/hookof/HOOKOF-2003.jpg
+    galleries:
+    - drawing
+    - 10-drawings
+- Alleylight:
+    _slug: alleylight
+    date: 01/01/2010
+    media: Graphite on Paper
+    file: /samples/images/alleylight/ALLEYLIGHT-2010.jpg
+    galleries:
+    - large-drawings
+- Bagenderby 2:
+    _slug: bagenderby-2
+    date: 01/01/2011
+    media: Graphite on Paper
+    file: /samples/images/bagenderby-2/Bagenderby-2_-2011.jpg
+    galleries:
+    - large-drawings
+- Carapace:
+    _slug: carapace
+    date: 01/01/2011
+    media: Graphite on Paper
+    file: /samples/images/carapace/CARAPACE-2011-.jpg
+    galleries:
+    - large-drawings
+- Bagenderby 1:
+    _slug: bagenderby-1
+    date: 01/01/2011
+    media: Graphite on Paper
+    file: /samples/images/bagenderby-1/Bagenderby-1_-2011.jpg
+    galleries:
+    - large-drawings
+- Exit, two:
+    _slug: exit-two
+    date: 01/01/2010
+    media: Graphite on Paper
+    file: /samples/images/exit-two/Exit_two-2010-2.jpg
+    galleries:
+    - large-drawings
+- Greenhat:
+    _slug: greenhat
+    date: 01/01/2013
+    media: Graphite on Paper
+    file: /samples/images/greenhat/greenhat.2013.jpg
+    galleries:
+    - large-drawings
+- Hauteur:
+    _slug: hauteur
+    date: 01/01/2010
+    media: Graphite on Paper
+    file: /samples/images/hauteur/HAUTEUR-2010.jpg
+    galleries:
+    - large-drawings
+- Jackitin:
+    _slug: jackitin
+    date: 01/01/2012
+    media: Graphite on Paper
+    file: /samples/images/jackitin/JACKITIN-2012.jpg
+    galleries:
+    - large-drawings
+- Stricken:
+    _slug: stricken
+    date: 01/01/2011
+    media: Graphite on Paper
+    file: /samples/images/stricken/STRICKEN2011.jpg
+    galleries:
+    - large-drawings
+- Touchbase:
+    _slug: touchbase
+    date: 09/28/2011
+    media: Graphite on Paper
+    file: /samples/images/touchbase/TOUCHBASE-28-9-11.jpg
+    galleries:
+    - large-drawings
+- Wasnot:
+    _slug: wasno
+    date: 01/01/2010
+    media: Graphite on Paper
+    file: /samples/images/wasno/WASNOT-2010.jpg
+    galleries:
+    - large-drawings
+- Momentb:
+    _slug: momentb
+    date: 02/03/2015
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/momentb/12-MOMENTB-3-2-2015.jpg
+    galleries:
+    - 12-painting
+- Inset:
+    _slug: inse
+    date: 01/28/2015
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/inse/11-INSET-28-1-2015.jpg
+    galleries:
+    - 12-painting
+- Sideone:
+    _slug: sideon
+    date: 01/25/2015
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/sideon/10-SIDEONE-25-1-2015.jpg
+    galleries:
+    - 12-painting
+- Burgeon:
+    _slug: burgeon
+    date: 12/21/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/burgeon/9-BURGEON-21-12-2014.jpg
+    galleries:
+    - 12-painting
+- Scoria:
+    _slug: scoria
+    date: 12/16/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/scoria/8-SCORIA-16-12-2014.jpg
+    galleries:
+    - 12-painting
+- Haunch:
+    _slug: haunch
+    date: 04/12/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/haunch/7-HAUNCH-4-12-2014.jpg
+    galleries:
+    - 12-painting
+- Situ:
+    _slug: situ
+    date: 11/24/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/situ/6-SITU-24-11-2014.jpg
+    galleries:
+    - 12-painting
+- Maun:
+    _slug: maun
+    date: 11/11/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/maun/5-MAUN-11-11-2014.jpg
+    galleries:
+    - 12-painting
+- Allot:
+    _slug: allot
+    date: 10/28/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/allot/4-ALLOT-28-10-14.jpg
+    galleries:
+    - 12-painting
+- Subsume:
+    _slug: subsume
+    date: 10/23/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/subsume/3-SUBSUME-23-10-2014.jpg
+    galleries:
+    - 12-painting
+- Resorb:
+    _slug: resorb
+    date: 10/14/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/resorb/2-RESORB-14-10-2014.jpg
+    galleries:
+    - 12-painting
+- Unhook:
+    _slug: unhook
+    date: 12/10/2014
+    media: Oil & Wax on Canvas, 59x61.5cm
+    file: /samples/images/unhook/1-UNHOOK-12-10-2014.jpg
+    galleries:
+    - 12-painting
+- Topoff:
+    _slug: topoff
+    date: 06/07/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/topoff/_-TOPOFF-6-7-14.jpg
+    galleries:
+    - 20-works
+- Astir:
+    _slug: astir
+    date: 07/20/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/astir/_ASTIR-20-7-14.jpg
+    galleries:
+    - 20-works
+- Beside:
+    _slug: beside
+    date: 07/14/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/beside/_BESIDE-14-7-14.jpg
+    galleries:
+    - 20-works
+- Deposit:
+    _slug: deposit
+    date: 08/31/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/deposit/_DEPOSIT-31-8-14.jpg
+    galleries:
+    - 20-works
+- Fibula:
+    _slug: fibula
+    date: 07/19/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/fibula/_FIBULA-19-7-14.jpg
+    galleries:
+    - 20-works
+- Further:
+    _slug: further
+    date: 07/21/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/further/_FURTHER-21-7-14.jpg
+    galleries:
+    - 20-works
+- Guise:
+    _slug: guise
+    date: 04/21/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/guise/_GUISE-21-4-14.jpg
+    galleries:
+    - 20-works
+- Jitty:
+    _slug: jitty
+    date: 12/06/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/jitty/_JITTY-12-6-14.jpg
+    galleries:
+    - 20-works
+- Knap:
+    _slug: knap
+    date: 06/18/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/knap/_KNAP-18-6-14.jpg
+    galleries:
+    - 20-works
+- Lees:
+    _slug: lees
+    date: 07/28/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/lees/_LEES-28-7-14.jpg
+    galleries:
+    - 20-works
+- Merseyrd:
+    _slug: merseyrd
+    date: 04/07/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/merseyrd/_MERSEYRD-4-7-14.jpg
+    galleries:
+    - 20-works
+- Pend:
+    _slug: pend
+    date: 04/24/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/pend/_PEND-24-4-14.jpg
+    galleries:
+    - 20-works
+- Raamtil:
+    _slug: raamtil
+    date: 07/27/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/raamtil/_RAAMTIL-20-7-14.jpg
+    galleries:
+    - 20-works
+- Remainder:
+    _slug: remainder
+    date: 04/25/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/remainder/_REMAINDER-25-4-14.jpg
+    galleries:
+    - 20-works
+- Inset:
+    _slug: inset
+    date: 04/26/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/inset/INSET-26-4-14.jpg
+    galleries:
+    - 20-works
+- Ledge:
+    _slug: ledge
+    date: 07/23/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/ledge/LEDGE-23-7-14.jpg
+    galleries:
+    - 20-works
+- Ransomstrip:
+    _slug: ransomstrip
+    date: 06/18/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/ransomstrip/RANSOMTRIP-18-6-14-.jpg
+    galleries:
+    - 20-works
+- Refract:
+    _slug: refract
+    date: 06/14/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/refract/REFRACT-14-6-14.jpg
+    galleries:
+    - 20-works
+- Sideup:
+    _slug: sideup
+    date: 02/08/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/sideup/SIDEUP-2-8-14.jpg
+    galleries:
+    - 20-works
+- Succour:
+    _slug: succou
+    date: 08/08/2014
+    media: Acrylic on Paper, 13x13cm
+    file: /samples/images/succou/SUCCOUR-8-8-14.jpg
+    galleries:
+    - 20-works

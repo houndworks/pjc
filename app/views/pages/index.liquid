@@ -1,7 +1,10 @@
 ---
 title: Home
+listed: false
 published: true
-redirect_url: "/galleries/recent-work"
+cache_strategy: none
+response_type: text/html
+position: 0
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +31,7 @@ redirect_url: "/galleries/recent-work"
     {% inline_editor %}
   </head>
   <body class="{{ page.slug }}">
-    <!-- :::: {{ plugins.test_plugin.the_message }} :::: -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <div class="container">
 
       <!-- Site Title -->
@@ -81,7 +84,54 @@ redirect_url: "/galleries/recent-work"
 
           
           {% block main %}
-            Default content for landing page...
+
+            <!-- TODO: sort out image format -->
+            <div class='rotating_image_container'>
+              <img id='rotating_image' />
+            </div>
+
+
+            <script type='text/javascript'>
+
+            //...er, ok..
+            shuffle = function(o){ 
+              for(var j, x, i = o.length; i; 
+              j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+              return o;
+            };
+
+
+            var images = [
+            {% for image in contents.images %}
+              "{{ image.file | resize: 'x500' }}" ,
+            {% endfor %}
+            ""
+            ];
+
+            images = shuffle(images);
+
+            var i = 0;
+            $(function(){
+              var updateGallery = function() {
+                var src = images[i++];
+                var image = $("<img />").attr('src', src).attr('id', 'rotating_image')
+                .load(function() {
+                  if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+                      alert('broken image!');
+                  } else {
+                      $("#rotating_image").replaceWith(image);
+                  }
+                });
+
+              };
+              var galleryInterval = setInterval(updateGallery, 6000);
+              updateGallery();
+            });
+
+            </script>
+
+
+          
           {% endblock %}
           {% include 'footer' %}
         </div>
@@ -89,7 +139,6 @@ redirect_url: "/galleries/recent-work"
     </div>
 
     <!-- Javascripts -->
-    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     {{ 'bootstrap.min.js' | javascript_tag }}
     {{ 'main.js' | javascript_tag }}
     {% block additional_js %}

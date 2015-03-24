@@ -1,60 +1,41 @@
+---
 name: Images
-slug: images
-
-# Explanation for the backoffice
 description: All the images, etc.
-
-# Default field (e.g title)
+slug: images
 label_field_name: title
-
-# Order of entries
-order_by: manually # default: manually, also available: created_at or any field slug
-
-# Order direction
-# order_direction: asc # default: asc, also available: desc
-
-# Display entries grouped by <field> in the backoffice
-# group_by: <your field>
-
-# Activate public 'create' API (e.g for a contact form)
-# public_submission_enabled: false
-
-# Emails to be notified on new entries using the public API
-# public_submission_accounts: ['john@acme.net']
-
-# Describe each field. The name shoud always be an underscored string
-fields: 
-- title: # Name of the field
+order_by: manually
+order_direction: asc
+fields:
+- title:
     label: Title
     type: string
     required: true
+    unique: false
     localized: false
-
-- date: # Name of the field
+- date:
     label: Date
     type: date
     required: false
+    unique: false
     localized: false
-
-- media: # Name of the field
+- media:
     label: Media
     type: string
     required: false
+    unique: false
     localized: false
-
-- file: # Name of the field
+- file:
     label: File
     type: file
     required: true
+    unique: false
     localized: false
-
-- galleries: # Name of the field
+- galleries:
     label: Galleries
     type: many_to_many
     required: false
-    localized: false    # Define the slug of the target content type
+    unique: false
+    localized: false
     class_name: galleries
     inverse_of: images
-    # If you want to manage the entries of the relationship directly from the source entry
     ui_enabled: true
-    

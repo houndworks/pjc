@@ -1,13 +1,95 @@
-- Paintings:
-    description: "Interesting artworks produced by an artist with brushes."
-    images: [Normal Beef, Spanish Exoticism, Sausages, Cabbage at Night, My Three Cars, Whiskers, Gravy, Tremulous Dogs, Forty Thousand]
-
-- Drawings:
-    description: "Interesting artworks produced by an artist with pencils."
-    images: [Normal Beef, Ladies, A Bad Smell, Cows in the Pasture, Champagne Breakfast]
-
+---
 - Recent Work:
-    description: "Recent and interesting artworks produced by the artist."
-    images: [Normal Beef, A Bad Smell, Cabbage at Night, Gravy, Forty Thousand]
-
-
+    _slug: recent-work
+    seo_title: Recent Work
+    description: ''
+    images: []
+- Paintings:
+    _slug: paintings
+    seo_title: Paintings
+    description: ''
+    images: []
+- Drawings:
+    _slug: drawing
+    seo_title: Drawings
+    description: ''
+    images:
+    - pigeonhole
+    - egress
+    - distich
+    - browz
+    - din
+    - unlit
+    - issue
+    - collect
+    - outof
+    - hookof
+- 10 Drawings:
+    _slug: 10-drawings
+    description: ''
+    images:
+    - browz
+    - collect
+    - din
+    - distich
+    - egress
+    - hookof
+    - issue
+    - outof
+    - pigeonhole
+    - unlit
+- Large Drawings:
+    _slug: large-drawings
+    description: ''
+    images:
+    - alleylight
+    - bagenderby-2
+    - carapace
+    - bagenderby-1
+    - exit-two
+    - greenhat
+    - hauteur
+    - jackitin
+    - stricken
+    - touchbase
+    - wasno
+- 12 Paintings:
+    _slug: 12-painting
+    description: ''
+    images:
+    - momentb
+    - inse
+    - sideon
+    - burgeon
+    - scoria
+    - haunch
+    - situ
+    - maun
+    - allot
+    - subsume
+    - resorb
+    - unhook
+- 20 Works:
+    _slug: 20-works
+    description: ''
+    images:
+    - topoff
+    - astir
+    - beside
+    - deposit
+    - fibula
+    - further
+    - guise
+    - jitty
+    - knap
+    - lees
+    - merseyrd
+    - pend
+    - raamtil
+    - remainder
+    - inset
+    - ledge
+    - ransomstrip
+    - refract
+    - sideup
+    - succou

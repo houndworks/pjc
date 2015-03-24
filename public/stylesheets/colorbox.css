@@ -30,7 +30,7 @@
         /* #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;} */
         /* Hide the current image number */
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
-        #cboxLoadingOverlay{background:#fff url(/images/loading.gif) no-repeat 5px 5px;}
+        #cboxLoadingOverlay{background:#fff url(/sites/538affbd5918adaf020007af/theme/images/loading.gif?1406654729) no-repeat 5px 5px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
@@ -39,11 +39,11 @@
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(/sites/538affbd5918adaf020007af/theme/images/controls.png?1406654729) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
         #cboxPrevious:hover{background-position:bottom left;}
-        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(/sites/538affbd5918adaf020007af/theme/images/controls.png?1406654729) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
         #cboxNext:hover{background-position:bottom right;}
-        /*#cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(/images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        /*#cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(/sites/538affbd5918adaf020007af/theme/images/controls.png?1406654729) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
 */
         /* Use the text only close link */

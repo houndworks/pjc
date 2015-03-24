@@ -1,36 +1,21 @@
 ---
 title: About
+slug: about
 listed: true
 published: true
-
-# position among sibling pages
-# position: 1
-
-# sets a redirection to the given url (301)
-# redirect_url: "<url to a page or to a remote url>"
-
-# content type that this page is templatizing
-# content_type: "<slug of one of the content types>"
-
-# editable_elements:
-#   'some_block/some_slug': "<text>"
-#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+cache_strategy: none
+response_type: text/html
+position: 101
+editable_elements:
+  main/about_body: "<h4><span style=\"line-height: 1.5em;\">Contact</span></h4>\r\n<p><span
+    style=\"line-height: 1.5em;\">pjcart (at) hotmail.com</span></p>"
 ---
 {% extends parent %}
 
 {% block main %}
 
   {% editable_text "about_body", rows: 20 %}
-    <h3>About</h3>
-    <p>Peter Cartwright, Artist, is tense and vital. etc etc. More descriptive stuff, if needed..</p>
-    <p>&nbsp;</p>
-    <h3>Exhibitions</h3>
-    <p>2013 Head of Chips Gallery, Bolton</p>
-    <p>2013 'The Artist as Iguana', Tibothy Tailor Gallery, Luton</p>
-    <p>2012 etc etc..</p>
-    <p>&nbsp;</p>
-    <h3>Contact</h3>
-    <p>pjcart (at) hotmail.com</p>
+    
   {% endeditable_text %}
 
 {% endblock %}

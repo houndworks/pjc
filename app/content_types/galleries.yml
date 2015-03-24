@@ -1,48 +1,30 @@
+---
 name: Galleries
-slug: galleries
 description: A collection of images
-
-# Default field (e.g title)
+slug: galleries
 label_field_name: title
-
-# Order of entries
-order_by: manually # default: manually, also available: created_at or any field slug
-
-# Order direction
-# order_direction: asc # default: asc, also available: desc
-
-# Display entries grouped by <field> in the backoffice
-# group_by: <your field>
-
-# Activate public 'create' API (e.g for a contact form)
-# public_submission_enabled: false
-
-# Emails to be notified on new entries using the public API
-# public_submission_accounts: ['john@acme.net']
-
-# Describe each field. The name shoud always be an underscored string
-fields: 
-- title: # Name of the field
+order_by: manually
+order_direction: asc
+fields:
+- title:
     label: Title
     type: string
     required: true
+    unique: false
     localized: false
-
-- description: # Name of the field
+- description:
     label: Description
     type: text
-    required: false
     hint: Explanatory or introductory text
+    required: false
+    unique: false
     localized: false
-    # Enable or not the RTE [html|text]
-    # text_formatting: html
-
 - images:
     label: Images
     type: many_to_many
     required: false
+    unique: false
     localized: false
     class_name: images
     inverse_of: galleries
     ui_enabled: true
-
